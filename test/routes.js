@@ -101,7 +101,7 @@ tape('should get reverse', function (t) {
 })
 
 tape('should get echo', function (t) {
-  var expected =       { one: '1', two: '2' }
+  var expected = { one: '1', two: '2' }
 
   var url = '/echo?one=1&two=2'
   servertest(server(), url, {encoding: 'json'}, function (err, res) {
